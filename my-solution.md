@@ -1,3 +1,5 @@
+hey
+
 # Solution
 
 Complete each task. Then, follow the instructions as to what to copy and paste into the empty code block.
@@ -11,7 +13,9 @@ Create a new directory called `git-lab/`. Then, navigate inside of that director
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+ $ mkdir git-lab/ 
+ $ ls
+ $ cd git-lab
 ```
 
 ## 2
@@ -21,7 +25,7 @@ Initialize the directory as a git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
-
+$ git init 
 ```
 
 ## 3
@@ -31,7 +35,7 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
-
+$ git status
 ```
 
 ## 4
@@ -41,7 +45,7 @@ Create a new file called `readme.md`. Then stage that file.
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+$ touch readme.md 
 ```
 
 ## 5
@@ -51,7 +55,7 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
-
+$ ls
 ```
 
 ## 6
@@ -67,7 +71,15 @@ Then, check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+On branch main
 
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ## 7
@@ -77,7 +89,9 @@ Commit your changes and include a sensible commit message. Then, check your repo
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+$ git add -A
+$ git status
+$ git commit -m "<message>"
 ```
 
 ## 8
@@ -87,7 +101,21 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+[main 5dee6fa] added changes
+ Committer: Ruslan Poptsov <ruslanpoptsov@Ruslans-Air.askey.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
 
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
 ## 9
@@ -97,5 +125,7 @@ Stage your changes and then make another commit with a sensible commit message.
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+git add -A 
+git status
+git commit -m "pushed most recent changes"
 ```
