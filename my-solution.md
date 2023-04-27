@@ -11,6 +11,8 @@ Create a new directory called `git-lab/`. Then, navigate inside of that director
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
+~ mkdir git-lab
+➜  ~ cd git-lab
 
 ```
 
@@ -21,6 +23,7 @@ Initialize the directory as a git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+Initialized empty Git repository in /Users/alex/git-lab/.git/
 
 ```
 
@@ -31,6 +34,11 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
 
 ```
 
@@ -41,6 +49,8 @@ Create a new file called `readme.md`. Then stage that file.
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
+git-lab git:(main) Touch readme.md
+ git-lab git:(main) ✗ git add readme.md  
 
 ```
 
@@ -51,7 +61,13 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+On branch main
 
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.md
 ```
 
 ## 6
@@ -67,6 +83,10 @@ Then, check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
 
 ```
 
@@ -77,7 +97,8 @@ Commit your changes and include a sensible commit message. Then, check your repo
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
-
+✗ git add readme.md
+✗ git commit -m 'commiting our change'
 ```
 
 ## 8
@@ -87,6 +108,8 @@ Check the current status of the git repository.
 Copy and paste the _output_ of the command(s) you ran into the code block below.
 
 ```
+On branch main
+nothing to commit, working tree clean
 
 ```
 
@@ -97,5 +120,7 @@ Stage your changes and then make another commit with a sensible commit message.
 Copy and paste _the command(s)_ you used into the code block below.
 
 ```
+git add readme.md
+git commit -m 'our second change'
 
 ```
